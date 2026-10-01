@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de Privacidad · Sazón</title>
+<meta name="description" content="Política de privacidad de Sazón, el recetario personal para Android que guarda todo en tu teléfono.">
+<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+<div class="envoltura">
+
+<header class="portada">
+  <a class="marca" href="index.html">Sazón</a>
+  <h1>Política de Privacidad</h1>
+  <p class="fecha">Última actualización: 1 de octubre de 2026 · Aplica a la aplicación Android <strong>Sazón</strong> (<code>com.ivanc.sazon</code>), versión 1.0.0 y posteriores.</p>
+</header>
+
+<div class="resumen">
+  <h2>En resumen</h2>
+  <p>Sazón <strong>no recoge, no transmite y no comparte ningún dato personal</strong>. No hay cuentas, registro, servidores, nube, anuncios, analítica ni rastreadores. Todo lo que escribes —recetas, fotos, plan de comidas, lista de compras— se guarda únicamente en el almacenamiento privado de tu teléfono.</p>
+  <p>La versión publicada en Google Play <strong>ni siquiera pide el permiso de acceso a internet</strong>, por lo que el sistema operativo le impide realizar conexiones de red.</p>
+</div>
+
+<h2>1. Quién es el responsable</h2>
+<p>Sazón es desarrollada y publicada por Iván Torres, desarrollador independiente. Para cualquier cuestión relativa a esta política o a la privacidad en la aplicación, el contacto es <a href="mailto:ivantr158@gmail.com">ivantr158@gmail.com</a>.</p>
+
+<h2>2. Qué datos recogemos</h2>
+<p><strong>Ninguno.</strong> Concretamente, Sazón no recoge ni envía a ningún sitio:</p>
+<ul>
+  <li>Datos de identidad: nombre, correo electrónico, teléfono, dirección ni fecha de nacimiento.</li>
+  <li>Datos de cuenta: la aplicación no tiene registro ni inicio de sesión de ningún tipo.</li>
+  <li>Identificadores: no se usa el identificador de publicidad de Android, ni el ID de instalación, ni la dirección MAC, ni el IMEI, ni ninguna huella del dispositivo.</li>
+  <li>Ubicación: ni precisa ni aproximada.</li>
+  <li>Contactos, mensajes, llamadas, calendario ni historial de navegación.</li>
+  <li>Datos de uso o analítica: no se mide qué pantallas abres, cuánto tiempo usas la aplicación ni qué recetas cocinas.</li>
+  <li>Informes de errores: la aplicación no incorpora ninguna herramienta de registro de fallos (<em>crash reporting</em>).</li>
+  <li>Datos de salud, financieros, biométricos ni ninguna otra categoría de datos sensibles.</li>
+</ul>
+<p>Tampoco hay publicidad, ni redes publicitarias, ni SDK de terceros de analítica, atribución o marketing integrados en la aplicación.</p>
+
+<h2>3. Qué datos se guardan en tu dispositivo</h2>
+<p>Sazón sirve para organizar tu cocina, así que guarda lo que tú escribes. Esa información permanece en tu teléfono, en el área privada de la aplicación, a la que Android no da acceso a otras aplicaciones:</p>
+<div class="tabla-scroll">
+<table>
+  <thead>
+    <tr><th>Información</th><th>Dónde se guarda</th><th>Para qué</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Recetas: título, categoría, porciones, tiempos, ingredientes, pasos y notas</td><td>Base de datos local (SQLite) dentro de la aplicación</td><td>Mostrar y editar tu recetario</td></tr>
+    <tr><td>Fotos que eliges para tus recetas</td><td>Carpeta privada de la aplicación; en la base de datos sólo queda la ruta del archivo</td><td>Ilustrar la receta en la lista y en su ficha</td></tr>
+    <tr><td>Plan semanal de comidas</td><td>Base de datos local</td><td>Mostrar qué toca cada día y avisarte a la hora de comer</td></tr>
+    <tr><td>Lista de compras e inventario de tu cocina</td><td>Base de datos local</td><td>Saber qué tienes y qué falta</td></tr>
+    <tr><td>Preferencias: tema claro u oscuro, sistema de unidades, avisos activados, horas de los recordatorios y comidas visibles del plan</td><td>Base de datos local</td><td>Recordar cómo quieres usar la aplicación</td></tr>
+  </tbody>
+</table>
+</div>
+<p>Nada de lo anterior se sincroniza, se copia a un servidor ni se transmite fuera del dispositivo. No tenemos ninguna forma de verlo.</p>
+
+<h2>4. Permisos y funciones del sistema que usa la aplicación</h2>
+<p>Estos son todos los permisos que declara la versión publicada, y para qué se usa cada uno:</p>
+<div class="tabla-scroll">
+<table>
+  <thead>
+    <tr><th>Permiso o función</th><th>Para qué se usa</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Notificaciones (<code>POST_NOTIFICATIONS</code>)</td><td>Avisar cuando termina un temporizador de cocina y recordarte la hora de cada comida. Las notificaciones se generan en el propio dispositivo: no hay notificaciones push ni servidores de mensajería.</td></tr>
+    <tr><td>Alarmas exactas (<code>USE_EXACT_ALARM</code>, <code>SCHEDULE_EXACT_ALARM</code>)</td><td>Que el aviso del temporizador suene a la hora exacta aunque la aplicación esté cerrada o el teléfono en reposo.</td></tr>
+    <tr><td>Vibración (<code>VIBRATE</code>)</td><td>Acompañar el aviso del temporizador.</td></tr>
+    <tr><td>Cámara y galería</td><td>Sólo cuando tú pulsas para añadir una foto a una receta. Se abre el selector del sistema, y la imagen que eliges se copia al almacenamiento privado de la aplicación. La foto no se analiza, no se sube a ningún sitio y puedes borrarla desde la receta.</td></tr>
+    <tr><td>Selector de archivos</td><td>Sólo cuando tú exportas o importas un respaldo, para elegir dónde guardarlo o qué archivo leer.</td></tr>
+    <tr><td>Síntesis de voz (lectura de pasos)</td><td>En el modo cocina, la aplicación puede leer los pasos en voz alta. Para ello entrega el texto del paso al motor de voz instalado en tu teléfono (el de Google, Samsung u otro). Ese motor es un componente del sistema ajeno a Sazón, y su tratamiento del texto se rige por la política de privacidad de su fabricante; algunos motores pueden procesarlo en sus servidores. Si prefieres evitarlo, desactiva «Leer los pasos en voz alta» en Configuración.</td></tr>
+    <tr><td>Mantener la pantalla encendida</td><td>Que la pantalla no se apague mientras cocinas paso a paso.</td></tr>
+    <tr><td>Acceso a internet</td><td><strong>No se solicita.</strong> La versión publicada no declara el permiso <code>android.permission.INTERNET</code>, de modo que Android bloquea cualquier conexión de red desde la aplicación.</td></tr>
+  </tbody>
+</table>
+</div>
+
+<h2>5. Con quién se comparten los datos</h2>
+<p>Sazón <strong>no comparte, vende, cede ni transfiere datos a nadie</strong>: ni a terceros, ni a empresas vinculadas, ni a intermediarios de datos, ni para fines publicitarios. No existe ningún encargado del tratamiento, porque no hay datos que tratar fuera de tu dispositivo.</p>
+<p>Hay tres situaciones en las que información puede salir del dispositivo, y en las tres eres tú quien lo decide y lo inicia:</p>
+<ul>
+  <li><strong>Exportar un respaldo.</strong> La opción «Exportar respaldo» genera un archivo JSON con tus recetas, tu inventario y tu lista de compras, y lo entrega a la aplicación que tú elijas en el diálogo del sistema (mensajería, correo, almacenamiento en la nube, etc.). Desde ese momento el archivo está en manos de esa aplicación o servicio y se rige por sus condiciones y su política de privacidad, no por esta. El archivo no está cifrado: guárdalo donde consideres seguro.</li>
+  <li><strong>Compartir contenido.</strong> Si usas el menú de compartir del sistema para enviar un texto o una receta, los datos van a la aplicación de destino que elijas.</li>
+  <li><strong>Motor de voz del sistema.</strong> Tal como se explica en el apartado 4, si activas la lectura de pasos, el texto del paso se entrega al motor de voz del teléfono.</li>
+</ul>
+<p>Al margen de la aplicación, Google Play recoge sus propios datos al distribuirla e instalarla (por ejemplo, instalaciones y fallos agregados). Ese tratamiento lo realiza Google, no nosotros, y se rige por la <a href="https://policies.google.com/privacy" rel="noopener">política de privacidad de Google</a>.</p>
+
+<h2>6. Menores</h2>
+<p>Sazón no está dirigida específicamente a menores ni se promociona como aplicación infantil: es una herramienta de cocina para público general. Como la aplicación no recoge dato personal alguno de ningún usuario, tampoco recoge datos de menores. Si eres padre, madre o tutor y tienes cualquier duda, escríbenos a <a href="mailto:ivantr158@gmail.com">ivantr158@gmail.com</a>.</p>
+
+<h2>7. Cuánto se conservan los datos y cómo se borran</h2>
+<p>Tu contenido permanece en el dispositivo mientras tú quieras: no hay caducidad ni limpieza automática. Para eliminarlo tienes tres caminos, todos bajo tu control:</p>
+<ul>
+  <li>Borrar recetas, comidas del plan o artículos de la lista una a una dentro de la aplicación.</li>
+  <li>Vaciar los datos de la aplicación desde <em>Ajustes de Android → Aplicaciones → Sazón → Almacenamiento → Borrar datos</em>.</li>
+  <li>Desinstalar Sazón, lo que elimina la base de datos y las fotos guardadas en su carpeta privada.</li>
+</ul>
+<p>Los respaldos que hayas exportado quedan donde los guardaste; borrarlos es cosa tuya. Como no conservamos copia de nada, no hay nada que podamos borrar por ti, ni nada que podamos recuperar si pierdes el teléfono.</p>
+
+<h2>8. Seguridad</h2>
+<p>Los datos viven en el área privada de la aplicación (el «sandbox» de Android), inaccesible para otras aplicaciones en un dispositivo sin modificar. Aun así conviene saber que la base de datos y el archivo de respaldo no están cifrados con una contraseña propia: quien tenga acceso desbloqueado a tu teléfono —o a un dispositivo con el sistema modificado (<em>root</em>)— podría leerlos. Te recomendamos mantener el bloqueo de pantalla activado y el sistema actualizado.</p>
+
+<h2>9. Tus derechos</h2>
+<p>La normativa de protección de datos —el RGPD europeo y leyes equivalentes— reconoce derechos de acceso, rectificación, supresión, limitación, oposición y portabilidad frente a quien trata tus datos. En el caso de Sazón esos derechos los ejerces tú directamente, sin intermediarios: tienes acceso completo a tu información dentro de la aplicación, puedes corregirla y borrarla cuando quieras, y la función de exportar respaldo te entrega todo tu contenido en un archivo JSON legible, que es portabilidad en el sentido literal. No hay solicitud que dirigirnos, porque no tenemos tus datos ni manera de obtenerlos. Si crees que algo de esta política no se corresponde con lo que hace la aplicación, escríbenos y lo corregimos.</p>
+
+<h2>10. Cambios en esta política</h2>
+<p>Si una versión futura de Sazón cambia algo relevante en el tratamiento de los datos, actualizaremos esta página y la fecha de la cabecera antes de publicar esa versión. Los cambios importantes se anunciarán además en la descripción de la ficha de Google Play. Esta página es la versión vigente en todo momento.</p>
+
+<h2>11. Contacto</h2>
+<p>Dudas, correcciones o avisos sobre privacidad: <a href="mailto:ivantr158@gmail.com">ivantr158@gmail.com</a>.</p>
+
+<footer>
+  <p>Sazón · <a href="index.html">Inicio</a> · <a href="terminos.html">Términos de uso</a></p>
+</footer>
+
+</div>
+</body>
+</html>

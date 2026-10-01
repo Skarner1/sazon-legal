@@ -1,0 +1,162 @@
+/* Sazón · hoja de estilo de las páginas legales.
+   Paleta tomada de lib/core/theme/app_colors.dart: crema + terracota.
+   Sin fuentes ni recursos externos: la página tiene que cargar igual
+   desde cualquier país y sin depender de ningún CDN. */
+
+:root {
+  --fondo: #fbf6ef;
+  --superficie: #ffffff;
+  --superficie-calida: #f4eadd;
+  --borde: #e9dccc;
+  --tinta: #3b2a20;
+  --tinta-suave: #826d5e;
+  --terracota: #b25723;
+  --salvia: #5d7750;
+  --ancho: 46rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --fondo: #241c17;
+    --superficie: #302620;
+    --superficie-calida: #3b2f27;
+    --borde: #4a3b31;
+    --tinta: #f5ebe0;
+    --tinta-suave: #c7b4a5;
+    --terracota: #e9a177;
+    --salvia: #a8c198;
+  }
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 0 1.25rem 4rem;
+  background: var(--fondo);
+  color: var(--tinta);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  -webkit-text-size-adjust: 100%;
+}
+
+.envoltura { max-width: var(--ancho); margin: 0 auto; }
+
+header.portada {
+  padding: 3rem 0 1.5rem;
+  border-bottom: 1px solid var(--borde);
+  margin-bottom: 2rem;
+}
+
+.marca {
+  display: inline-block;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--terracota);
+  margin: 0 0 0.75rem;
+  text-decoration: none;
+}
+
+h1 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.85rem, 5vw, 2.5rem);
+  line-height: 1.2;
+  margin: 0 0 0.5rem;
+  font-weight: 600;
+}
+
+h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.3125rem;
+  line-height: 1.3;
+  margin: 2.5rem 0 0.75rem;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.0625rem;
+  margin: 1.75rem 0 0.5rem;
+  font-weight: 700;
+}
+
+.fecha {
+  color: var(--tinta-suave);
+  font-size: 0.9375rem;
+  margin: 0;
+}
+
+p, ul, ol { margin: 0 0 1rem; }
+ul, ol { padding-left: 1.4rem; }
+li { margin-bottom: 0.4rem; }
+
+a { color: var(--terracota); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+a:hover { text-decoration-thickness: 2px; }
+
+strong { font-weight: 700; }
+
+.resumen {
+  background: var(--superficie-calida);
+  border: 1px solid var(--borde);
+  border-radius: 1rem;
+  padding: 1.25rem 1.4rem;
+  margin: 0 0 2rem;
+}
+.resumen h2 { margin-top: 0; }
+.resumen :last-child { margin-bottom: 0; }
+
+.tarjetas {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 0.875rem;
+}
+.tarjetas a {
+  display: block;
+  background: var(--superficie);
+  border: 1px solid var(--borde);
+  border-radius: 1rem;
+  padding: 1.125rem 1.25rem;
+  text-decoration: none;
+  color: inherit;
+}
+.tarjetas a:hover { border-color: var(--terracota); }
+.tarjetas strong { display: block; color: var(--terracota); margin-bottom: 0.15rem; }
+.tarjetas span { color: var(--tinta-suave); font-size: 0.9375rem; }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 0 1.25rem;
+  font-size: 0.9375rem;
+}
+.tabla-scroll { overflow-x: auto; }
+th, td {
+  text-align: left;
+  vertical-align: top;
+  padding: 0.625rem 0.75rem;
+  border-bottom: 1px solid var(--borde);
+}
+th { background: var(--superficie-calida); font-weight: 700; }
+
+footer {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--borde);
+  color: var(--tinta-suave);
+  font-size: 0.9375rem;
+}
+footer a { color: var(--salvia); }
+
+code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.875em;
+  background: var(--superficie-calida);
+  border: 1px solid var(--borde);
+  border-radius: 0.3rem;
+  padding: 0.05em 0.3em;
+  overflow-wrap: anywhere;
+}
